@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "bombowyclient",
+  "version": "${version}",
+  "name": "BombowyClient",
+  "description": "Zoptymalizowany mod Fabric dla Minecraft 1.21.4 z GUI wzorowanym na układzie z screenów, działającym sercem, 3 kreskami, strzałką powrotu oraz nickiem z czarną bombą w nawiasie.",
+  "authors": [
+    "BombowyDev"
+  ],
+  "contact": {
+    "sources": "https://github.com/bombowyclient/bombowyclient"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.bombowy.client.BombowyClient"
+    ]
+  },
+  "mixins": [
+    "bombowyclient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21.4 <1.22",
+    "java": ">=21"
+  }
+}
